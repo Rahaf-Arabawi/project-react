@@ -1,0 +1,122 @@
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 91vh;
+  height: 70vh;
+  background-color: #fff;
+}
+.contact-us-form22 {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 50vh;
+  background-color: #fff;
+}
+
+.contact-us-form img {
+  width: 90vh;
+  height: 80vh;
+}
+
+.form-card {
+  background: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 32px;
+  width: 600px;
+  max-width: 600px;
+}
+
+.form-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: #1f2937;
+}
+
+.success-message {
+  background-color: #d1fae5;
+  color: #065f46;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.875rem;
+  color: #4b5563;
+  margin-bottom: 4px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #6366f1;
+}
+
+.submit-button {
+  margin-left: 0;
+  width: 100%;
+  background: #8a2be2;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.5s 0.2s ease-in-out;
+}
+
+.submit-button:hover {
+  transform: scale(1.04);
+  background-color: #df52d4;
+}
+
+.submit-button:focus {
+  outline: 2px solid #6366f1;
+}
+
+@media screen and (max-width: 1200px) {
+  .contact-us-form img {
+    width: 400px;
+    height: 400px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .form-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-us-form img {
+    width: 0;
+    height: 0;
+  }
+}
+@media screen and (max-width: 500px) {
+  .form-card {
+    width: 100%;
+  }
+  .contact-us-form img {
+    width: 0;
+    height: 0;
+  }
+}

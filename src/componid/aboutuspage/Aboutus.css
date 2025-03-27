@@ -1,0 +1,277 @@
+.text-center {
+  background: linear-gradient(to right, #cdc8c8, #9aa4b6);
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #fff;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  width: 100%;
+  margin-top: 70px;
+}
+
+.dark-mode .text-center {
+  background-color: #1a1a1a; /* Dark background */
+  color: #ffffff; /* Light text color */
+}
+
+.about-section {
+  color: white;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: url("./img/33.jpg") no-repeat center center/cover;
+  text-align: center;
+}
+
+.dark-mode .about-section {
+  background: #303030; /* Dark background */
+}
+
+.overlay {
+  margin-top: 70px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.about-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  position: relative;
+  z-index: 2;
+}
+.about-title::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 3px;
+  background: white;
+  margin: 10px auto;
+}
+.profile-img {
+  position: relative;
+  z-index: 2;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 5px solid white;
+  object-fit: cover;
+  margin-top: 20px;
+}
+
+.about-text {
+  font-size: 1.2rem;
+  width: 60%;
+  max-width: 600px;
+  position: relative;
+  z-index: 2;
+  margin-top: 20px;
+  text-align: justify;
+}
+
+.h2 {
+  color: black;
+  text-align: center;
+}
+.container3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  margin: auto;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+.card22 {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  text-align: center;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  width: 400px;
+  height: 250px;
+}
+
+.dark-mode .card22 {
+  background-color: #424242; /* Dark background for cards */
+  color: #ffffff; /* Light text color */
+}
+
+.card22::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #303030;
+  z-index: 1;
+}
+.card22 .img1 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid white;
+  object-fit: cover;
+  position: relative;
+  z-index: 2;
+}
+.card22 h3,
+.card22 p {
+  position: relative;
+  z-index: 2;
+}
+.card22:hover {
+  transform: scale(1.05);
+  filter: brightness(1.2);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+.card22 {
+  transition: 1.5s;
+}
+
+.card22:hover h3,
+.card22:hover p {
+  transition: color 0.3s ease;
+}
+.h3 {
+  margin: 30px;
+  color: #000;
+}
+.nop {
+  max-width: 60%;
+  overflow: hidden;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.container11 {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card11 {
+  background: #303030;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 15px;
+  width: auto;
+  height: 200px;
+}
+
+.dark-mode .card11 {
+  background: #424242; /* Dark background for student cards */
+}
+
+
+.card11 img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.card11 h3 {
+  color: #fff;
+  margin: 10px 0 5px;
+  font-size: 1.2em;
+}
+
+.card11 p {
+  font-size: 1em;
+  color: #ffffff;
+}
+
+@media (max-width: 800px) {
+  .about-section {
+    height: auto;
+    padding: 20px;
+  }
+
+  .about-text {
+    width: 90%;
+    font-size: 1rem;
+  }
+
+  .container3,
+  .container11 {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+    height: auto;
+  }
+
+  .card11 {
+    width: 90%;
+    height: auto;
+  }
+}
+@media (max-width: 500px) {
+  .about-section {
+    height: auto;
+    padding: 20px;
+  }
+
+  .about-text {
+    width: 70%;
+    font-size: 1rem;
+  }
+
+  .container3,
+  .container11 {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .card {
+    width: 70%;
+    height: auto;
+  }
+
+  .card11 {
+    width: 70%;
+    height: auto;
+  }
+}
+@media (max-width: 400px) {
+  .about-section {
+    height: auto;
+    padding: 20px;
+  }
+
+  .about-text {
+    width: 50%;
+    font-size: 1rem;
+  }
+
+  .container3,
+  .container11 {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .card {
+    width: 50%;
+    height: auto;
+  }
+
+  .card11 {
+    width: 50%;
+    height: auto;
+  }
+}

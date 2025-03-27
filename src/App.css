@@ -1,0 +1,32 @@
+.App.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.wha{
+    width: 70px;
+    height: 40px;
+    margin-right: 160px;
+    margin-top: 7px;
+}
+.App.light-mode .btn-dark {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.App.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.App.dark-mode .btn-light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.toggle-dark-mode {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+}

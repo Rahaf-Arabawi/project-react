@@ -1,0 +1,156 @@
+/* الوضع العادي (Light Mode) */
+.services-section {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: hsl(277, 64%, 61%);
+  margin: 10px auto 0;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service-item {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  transition: transform 1s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.service-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px hsl(277, 64%, 61%);
+  background-color: hsl(277, 64%, 61%);
+  color: #fff;
+}
+
+.service-item .icon {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.service-item h3 {
+  font-size: 1.25rem;
+  margin: 10px 0;
+}
+
+/* الوضع الليلي (Dark Mode) */
+.services-section.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.services-section.dark-mode .section-title::after {
+  background: #ffcc00; /* شريط تحت العنوان */
+}
+
+.services-section.dark-mode .service-item {
+  background: #2e2e2e;
+  border-color: #444;
+}
+
+.services-section.dark-mode .service-item:hover {
+  background-color: #444;
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+
+.services-section.dark-mode .icon {
+  color: #ffcc00; /* لون الأيقونات في الوضع الليلي */
+}
+
+/* استجابة للشاشات الصغيرة */
+@media (max-width: 1000px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 800px) {
+  .services-grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .service-item {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .service-item {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .services-section {
+    padding: 30px 10px;
+  }
+
+  .section-title {
+    font-size: 1.4rem;
+  }
+
+  .service-item {
+    padding: 8px;
+  }
+
+  .service-item .icon {
+    font-size: 1.8rem;
+  }
+
+  .service-item h3 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 200px) {
+  .services-section {
+    padding: 20px 5px;
+  }
+
+  .section-title {
+    font-size: 1.2rem;
+  }
+
+  .service-item {
+    padding: 5px;
+  }
+
+  .service-item .icon {
+    font-size: 1.5rem;
+  }
+
+  .service-item h3 {
+    font-size: 0.8rem;
+  }
+}
